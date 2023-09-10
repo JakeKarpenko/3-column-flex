@@ -1,0 +1,121 @@
+.flex-card{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card-element{
+    max-width: 300px;
+    min-height: 450px;
+}
+
+.first{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 7px 0 0 7px;
+}
+.second{
+    background-color: hsl(184, 100%, 22%);
+}
+.thirst{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 7px 7px 0;
+}
+
+.heading{
+    margin-left: 35px;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.text, .button {
+    font-family: 'Lexend Deca', sans-serif;
+    margin-left: 35px;
+    margin-right: 50px;
+}
+
+.text{
+    line-height: 25px;
+}
+.paragraph{
+   color:hsla(0, 0%, 100%, 0.75);
+   font-size: 15px;
+}
+
+.heading{
+    color: hsl(0, 0%, 95%) ;
+}
+
+.button{
+  padding-top: 60px;
+}
+.button > span{
+ background-color:  hsl(0, 0%, 95%);
+ padding: 13px 25px;
+ border-radius: 30px;
+
+}
+
+
+
+.first .button span {
+  color:  hsl(31, 77%, 52%);
+}
+
+.second .button span{
+  color: hsl(184, 100%, 22%);
+}
+
+.thirst .button span{
+    color: hsl(179, 100%, 13%);
+}
+img{
+    margin-left: 35px;
+    margin-top: 35px;
+}
+
+@media (max-width:900px){
+    .first{
+        border-radius: 7px 0 0 7px;
+    }
+    .second{
+        border-radius: 0 7px 7px 0;
+    }
+    .thirst{
+        border-radius: 0 0 7px 7px;
+    }
+}
+
+@media (max-width:610px){
+    .first{
+        border-radius: 7px 7px 0 0px;
+    }
+    .second{
+        border-radius: 0 0 0 0;
+    }
+    .thirst{
+        border-radius: 0 0 7px 7px;
+    }
+}
+
+
+.first .button span:hover {
+    background-color:  hsl(31, 77%, 52%);
+    border: 1px white solid;
+    color: hsl(0, 0%, 95%);
+  }
+  
+  .second .button span:hover{
+    background-color: hsl(184, 100%, 22%);
+    border: 1px white solid;
+    color:  hsl(0, 0%, 95%);
+  }
+  
+  .thirst .button span:hover{
+      background-color: hsl(179, 100%, 13%);
+      border: 1px white solid;
+      color:  hsl(0, 0%, 95%);
+  }
